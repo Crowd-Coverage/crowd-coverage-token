@@ -1,0 +1,21 @@
+{
+  "name": "crowd-coverage-token",
+  "version": "1.0.0",
+  "description": "Token contracts for COVR token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Phillip Lorenzo",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "truffle": "^4.1.5",
+    "web3": "^1.0.0-beta.33",
+    "zeppelin-solidity": "^1.8.0"
+  }
+}
