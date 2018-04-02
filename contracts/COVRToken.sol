@@ -20,6 +20,9 @@ contract COVRToken is MintableToken {
     uint256 public constant MAX_SUPPLY = 4**9 * 10**18;
 
     function mintToken(address _to, uint256 _amount) public returns (bool) {
-      
+        if (totalSupply_.add(_amount) > MAX_SUPPLY) {
+            return false;
+            return super.mint(_to, _amount);    
+      }
     }
 }
