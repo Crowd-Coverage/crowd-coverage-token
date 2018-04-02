@@ -6,6 +6,7 @@ const provider = ganache.provider();
 const web3 = new Web3(provider);
 
 const compiledToken = require('../build/contracts/COVRToken.json');
+console.log(compiledToken);
 
 let accounts;
 let tokenAddress;

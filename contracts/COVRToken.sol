@@ -16,13 +16,13 @@ import "node_modules/zeppelin-solidity/contracts/token/ERC20/MintableToken.sol";
 contract COVRToken is MintableToken {
     string public name = "Crowd Coverage Token";
     string public symbol = "COVR";
-    uint8 public decimals = 18;
+    uint256 public decimals = 18;
     uint256 public constant MAX_SUPPLY = 4**9 * 10**18;
 
     function mintToken(address _to, uint256 _amount) public returns (bool) {
         if (totalSupply_.add(_amount) > MAX_SUPPLY) {
             return false;
-            return super.mint(_to, _amount);    
       }
+        return super.mint(_to, _amount);    
     }
 }
